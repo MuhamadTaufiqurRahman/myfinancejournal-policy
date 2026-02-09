@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -22,47 +23,43 @@
             align-items: center;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 600px;
             width: 100%;
             background: white;
-            padding: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             text-align: center;
-        }
-        
-        .logo {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #4285F4;
         }
 
         .logo1 {
-            width: 40px;
-            height: 40px;
+            width: 50%;
+            height: 50%;
         }
-        
+
         h1 {
             color: #2C3E50;
             font-size: 2.5em;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
+            border-width: 20px;
         }
-        
+
         .subtitle {
             color: #7F8C8D;
             font-size: 1.1em;
-            margin-bottom: 30px;
+            margin-bottom: 0px;
         }
-        
+
         .card-container {
             display: flex;
             flex-direction: column;
             gap: 20px;
             margin: 30px 0;
         }
-        
+
         .card {
             background: #f8f9fa;
             padding: 25px;
@@ -72,27 +69,27 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
         }
-        
+
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .card:nth-child(2) {
             border-left-color: #2ECC71;
         }
-        
+
         .card h3 {
             color: #2C3E50;
             margin-bottom: 10px;
             font-size: 1.3em;
         }
-        
+
         .card p {
             color: #666;
             margin-bottom: 15px;
         }
-        
+
         .btn {
             display: inline-block;
             background: #4285F4;
@@ -105,19 +102,19 @@
             border: none;
             cursor: pointer;
         }
-        
+
         .btn:hover {
             background: #3367D6;
         }
-        
+
         .btn.secondary {
             background: #2ECC71;
         }
-        
+
         .btn.secondary:hover {
             background: #27AE60;
         }
-        
+
         .app-info {
             margin-top: 30px;
             padding-top: 20px;
@@ -125,53 +122,52 @@
             color: #7F8C8D;
             font-size: 0.9em;
         }
-        
+
         .contact {
             margin-top: 20px;
             color: #555;
         }
-        
+
         @media (max-width: 600px) {
             .container {
                 padding: 25px;
             }
-            
+
             h1 {
                 font-size: 2em;
             }
-            
+
             .card {
                 padding: 20px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="logo">
-            <img class="logo1" src="logoProduk1.png" alt="logo" srcset="">
-        </div>
-        <h1>My Finance Journal</h1>
+
+        <img class="logo1" src="splashs.png" alt="logo" srcset="">
         <p class="subtitle">Legal Documents & Policies</p>
-        
+
         <div class="card-container">
             <div class="card" onclick="window.location.href='privacy-policy.html'">
                 <h3>📄 Privacy Policy</h3>
                 <p>Learn how we collect, use, and protect your personal information. We value your privacy and are transparent about our data practices.</p>
                 <a href="privacy-policy.html" class="btn">Read Privacy Policy</a>
             </div>
-            
+
             <div class="card" onclick="window.location.href='terms-of-service.html'">
                 <h3>📋 Terms of Service</h3>
                 <p>Understand the terms governing your use of My Finance Journal app. These terms outline your rights and responsibilities.</p>
                 <a href="terms-of-service.html" class="btn secondary">Read Terms of Service</a>
             </div>
         </div>
-        
+
         <div class="app-info">
             <p><strong>My Finance Journal</strong> - Personal Finance Management App</p>
             <p>Track expenses, manage budgets, and achieve financial goals</p>
-            
+
             <div class="contact">
                 <p>For questions or support:</p>
                 <p>📧 taufiqur194@gmail.com</p>
@@ -193,4 +189,5 @@
         });
     </script>
 </body>
+
 </html>
